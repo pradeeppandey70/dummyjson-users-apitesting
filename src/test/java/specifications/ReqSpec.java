@@ -9,7 +9,7 @@ public class ReqSpec {
 	
 	
 	public static RequestSpecification getReqSpecification() {
-		return new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("baseuri")).
+		return new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("BASEURI")).
 		setContentType(ContentType.JSON).
 		setAccept(ContentType.JSON).build();
 	}
